@@ -27,12 +27,14 @@ class ListViewModel {
     }
 
     private func createSection(_ items: ForecastItems) {
-        let datas: [TableViewData] = items.map {
-            ListCellData(forecast: $0)
-                .set(trailingActions: [self.trailingAction(item: $0)])
+        let datas: [TableViewData] = items.map { item in
+            ListCellData(forecast: item)
+                .set(trailingActions: [self.trailingAction(item: item)])
                 .set(separator: .full)
                 .set(separatorColor: .lightGray)
-                .did(select: nil)
+                .did(select: { [weak self] _ in
+                    self?.showDetail?(item)
+                })
 
         }
         self.datas.send([TableViewSection(identifier: "section",
