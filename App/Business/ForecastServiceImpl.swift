@@ -30,4 +30,11 @@ extension ForecastServiceImpl: ForecastService {
                 self?.itemsSubj.send(items)
             }.store(in: &bag)
     }
+
+    func removeForecastItem(_ item: ForecastItem) {
+        guard let index = itemsSubj.value.firstIndex(where: { $0.day == item.day }) else {
+            return
+        }
+        itemsSubj.value.remove(at: index)
+    }
 }

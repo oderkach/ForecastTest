@@ -40,6 +40,12 @@ class ListViewModel {
     }
 
     private func trailingAction(item: ForecastItem) -> TableViewContextualAction {
-        return TableViewContextualAction(title: "Delete", style: .destructive, backgroundColor: .red, action: nil)
+        TableViewContextualAction(
+            title: "Delete",
+            style: .destructive,
+            backgroundColor: .red
+        ) { [weak self] _ in
+            self?.service.removeForecastItem(item)
+        }
     }
 }
