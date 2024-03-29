@@ -54,6 +54,7 @@
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE2D08212BB5B08A008DFBD5 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2D08202BB5B08A008DFBD5 /* ForecastServiceImpl.swift */; };
+		EEF3856E2BB74CEE00A66C5E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3856D2BB74CEE00A66C5E /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
 		EE2D08202BB5B08A008DFBD5 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
+		EEF3856D2BB74CEE00A66C5E /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 				4ADACE4028041D6800706AD5 /* AppDelegate.swift */,
 				4ADACE4228041D6800706AD5 /* SceneDelegate.swift */,
 				4AA546F6280431BC00BCE871 /* AppModule.swift */,
+				EEF3856F2BB74CEE00A66C5E /* Utils */,
 				4AA546F028042F7600BCE871 /* Business */,
 				4AA546EF28042F6A00BCE871 /* UI */,
 				4ADACE4C28041D6800706AD5 /* Assets.xcassets */,
@@ -364,6 +367,14 @@
 				4AA5471C28046D6100BCE871 /* UIViewController+SwiftUI.swift */,
 			);
 			path = GlobalUI;
+			sourceTree = "<group>";
+		};
+		EEF3856F2BB74CEE00A66C5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EEF3856D2BB74CEE00A66C5E /* Formatters.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,6 +551,7 @@
 				4AA5470C28045EA700BCE871 /* ForecastService.swift in Sources */,
 				4AA5470428045ADA00BCE871 /* ForecastNetworkService.swift in Sources */,
 				EE2D08212BB5B08A008DFBD5 /* ForecastServiceImpl.swift in Sources */,
+				EEF3856E2BB74CEE00A66C5E /* Formatters.swift in Sources */,
 				4AA5471B2804679C00BCE871 /* ListCell.swift in Sources */,
 				4AA546F7280431BC00BCE871 /* AppModule.swift in Sources */,
 				4AA547182804672000BCE871 /* ListCellData.swift in Sources */,
