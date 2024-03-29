@@ -53,6 +53,7 @@
 		4ADACEBE280424FB00706AD5 /* GlobalUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADACEAE280424FA00706AD5 /* GlobalUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ADACEC1280424FB00706AD5 /* GlobalUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; };
 		4ADACEC2280424FB00706AD5 /* GlobalUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADACEAC280424FA00706AD5 /* GlobalUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE2D08212BB5B08A008DFBD5 /* ForecastServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2D08202BB5B08A008DFBD5 /* ForecastServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		4ADACE9F2804238D00706AD5 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		4ADACEAC280424FA00706AD5 /* GlobalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlobalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADACEAE280424FA00706AD5 /* GlobalUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUI.h; sourceTree = "<group>"; };
+		EE2D08202BB5B08A008DFBD5 /* ForecastServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA5470B28045EA700BCE871 /* ForecastService.swift */,
+				EE2D08202BB5B08A008DFBD5 /* ForecastServiceImpl.swift */,
 				4AA5470D28045F6A00BCE871 /* Models */,
 				4AA5470728045BC200BCE871 /* Network */,
 			);
@@ -536,6 +539,7 @@
 				4ADACE4328041D6800706AD5 /* SceneDelegate.swift in Sources */,
 				4AA5470C28045EA700BCE871 /* ForecastService.swift in Sources */,
 				4AA5470428045ADA00BCE871 /* ForecastNetworkService.swift in Sources */,
+				EE2D08212BB5B08A008DFBD5 /* ForecastServiceImpl.swift in Sources */,
 				4AA5471B2804679C00BCE871 /* ListCell.swift in Sources */,
 				4AA546F7280431BC00BCE871 /* AppModule.swift in Sources */,
 				4AA547182804672000BCE871 /* ListCellData.swift in Sources */,

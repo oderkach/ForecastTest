@@ -6,6 +6,12 @@
 
 import Foundation
 
-struct ForecastItem { }
-
 typealias ForecastItems = [ForecastItem]
+
+struct ForecastItem {
+}
+
+extension ForecastItem {
+    init(_ model: ForecastItemDTO) {
+    }
+}

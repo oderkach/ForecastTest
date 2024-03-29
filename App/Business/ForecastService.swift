@@ -7,6 +7,6 @@
 import Combine
 
 protocol ForecastService {
-    var items: CurrentValueSubject<ForecastItems, Never> { get }
-    // TODO
+    var items: AnyPublisher<ForecastItems, Never> { get }
+    func fetchForecast()
 }

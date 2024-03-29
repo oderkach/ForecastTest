@@ -19,6 +19,7 @@ class ListViewModel {
     var title: String = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as! String
 
     init() {
+        service.fetchForecast()
         service.items
             .receive(on: DispatchQueue.main)
             .sink { [weak self] in self?.createSection($0) }
