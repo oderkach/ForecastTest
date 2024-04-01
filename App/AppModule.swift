@@ -13,7 +13,11 @@ public class AppModule: Module {
     }
 
     public func registerServices() {
+        #if MOCK
+        GlobalContainer.defaultContainer.register(ForecastNetworkService.self) { _ in ForecastNetworkServiceMock() }
+        #else
         GlobalContainer.defaultContainer.register(ForecastNetworkService.self) { _ in ForecastNetworkServiceImpl() }
+        #endif
 
         GlobalContainer.defaultContainer.register(ForecastService.self) { _ in
             ForecastServiceImpl()
